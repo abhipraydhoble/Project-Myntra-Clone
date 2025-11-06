@@ -511,6 +511,8 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
       
 <img width="1895" height="940" alt="image" src="https://github.com/user-attachments/assets/4332a9a7-e018-4738-98ce-28d4aa6196a2" />
 
+<img width="1912" height="957" alt="image" src="https://github.com/user-attachments/assets/13e905b8-b640-4369-9394-292446f8b7c8" />
+
 ---
 # Monitoring with Datadog
 ## Install helm
@@ -543,10 +545,6 @@ kubectl apply -f  datadog-agent.yaml
 ## once agent install you can check your pods 
 - go to infrastructure -> containers->k8s explorer
 <img width="1902" height="851" alt="image" src="https://github.com/user-attachments/assets/582f321b-5a23-459e-8bd1-2442c6b04afc" />
-
-
-
-<img width="1912" height="957" alt="image" src="https://github.com/user-attachments/assets/13e905b8-b640-4369-9394-292446f8b7c8" />
 <img width="1328" height="855" alt="image" src="https://github.com/user-attachments/assets/90fc2b3f-6ee1-4512-85b7-1f3cc4c269c2" />
 
 
