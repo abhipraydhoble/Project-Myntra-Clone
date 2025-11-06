@@ -383,6 +383,10 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.
 sudo apt-get update
 sudo apt-get install helm
 ````
+or
+````
+sudo snap install helm --classic
+````
 - Set up Prometheus and Grafana to monitor your application.
 
 - Add helm repo
@@ -507,4 +511,42 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
       
 <img width="1895" height="940" alt="image" src="https://github.com/user-attachments/assets/4332a9a7-e018-4738-98ce-28d4aa6196a2" />
 
+---
+# Monitoring with Datadog
+## Install helm
+````
+sudo snap install helm --classic
+````
+## go to dd->integrations->install agent
+- select kubernets
+<img width="1918" height="815" alt="image" src="https://github.com/user-attachments/assets/2d3d7e16-5186-471f-a605-10a7fbfe9bfd" />
+<img width="1918" height="747" alt="image" src="https://github.com/user-attachments/assets/ae65cc5b-1a69-4650-84bc-a15cbf8cb819" />
+## create datadog-agent.yaml file
+````
+kind: "DatadogAgent"
+apiVersion: "datadoghq.com/v2alpha1"
+metadata:
+  name: "datadog"
+spec:
+  global:
+    site: "us5.datadoghq.com"
+    credentials:
+      apiSecret:
+        secretName: "datadog-secret"
+        keyName: "api-key"
+````
+````
+kubectl apply -f  datadog-agent.yaml
+````
+<img width="1052" height="426" alt="image" src="https://github.com/user-attachments/assets/3b5ccc14-74ce-47a4-8206-ec38cde46d7c" />
+
+## once agent install you can check your pods 
+- go to infrastructure -> containers->k8s explorer
+<img width="1902" height="851" alt="image" src="https://github.com/user-attachments/assets/582f321b-5a23-459e-8bd1-2442c6b04afc" />
+
+
+
 <img width="1912" height="957" alt="image" src="https://github.com/user-attachments/assets/13e905b8-b640-4369-9394-292446f8b7c8" />
+<img width="1328" height="855" alt="image" src="https://github.com/user-attachments/assets/90fc2b3f-6ee1-4512-85b7-1f3cc4c269c2" />
+
+
