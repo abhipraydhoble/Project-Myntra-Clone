@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: myntra
-        image: abhipraydh96/ecom:2
+        image: abhipraydh96/mintra:1
         ports:
         - containerPort: 3000   # Use port 3000
 
