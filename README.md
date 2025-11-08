@@ -523,8 +523,9 @@ sudo snap install helm --classic
 - select kubernets
 <img width="1918" height="815" alt="image" src="https://github.com/user-attachments/assets/2d3d7e16-5186-471f-a605-10a7fbfe9bfd" />
 <img width="1918" height="747" alt="image" src="https://github.com/user-attachments/assets/ae65cc5b-1a69-4650-84bc-a15cbf8cb819" />
+
 ## create datadog-agent.yaml file
-````
+```yaml
 kind: "DatadogAgent"
 apiVersion: "datadoghq.com/v2alpha1"
 metadata:
@@ -537,6 +538,7 @@ spec:
         secretName: "datadog-secret"
         keyName: "api-key"
 ````
+
 ````
 kubectl apply -f  datadog-agent.yaml
 ````
