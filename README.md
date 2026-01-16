@@ -75,7 +75,9 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 <img width="990" src="https://user-images.githubusercontent.com/43399466/215961440-3f13f82b-61a2-4117-88bc-0da265a67fa7.png">
 
 Install the Required plugins in Jenkins
-
+````
+stage view
+````
 
 ````     
 NodeJs
