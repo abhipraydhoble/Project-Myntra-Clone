@@ -76,12 +76,24 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
 
 Install the Required plugins in Jenkins
 
-   - Log in to Jenkins.
-   - Go to Manage Jenkins > Manage Plugins.
-   - In the Available tab, search for
-        - NodeJs
-        - SonarQube Scanner
-        - CloudBees Docker Build and Publish plugin, Docker Pipeline, Docker plugin, docker-build-step
+
+````     
+NodeJs
+````
+````
+SonarQube Scanner
+````
+````
+nodejs
+````
+````
+Eclipse Temurin installer Plugi
+````
+````
+docker
+````
+
+- CloudBees Docker Build and Publish plugin, Docker Pipeline, Docker plugin, docker-build-step
    - Select the plugins and click the Install button.
    - Restart Jenkins after the plugin is installed. `http://<ec2-instance-public-ip-address>:8080/restart`
    
