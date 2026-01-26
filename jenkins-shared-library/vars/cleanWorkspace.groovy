@@ -1,5 +1,5 @@
-```groovy
+
 def call() {
     cleanWs()
 }
-```
+
