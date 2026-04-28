@@ -300,7 +300,7 @@ pipeline {
 
 ### Create EKS Cluster
 ````
-https://github.com/abhipraydhoble/CDEC-Devops/blob/main/Kubernetes/eks-setup.md
+https://github.com/abhipraydhoble/oncdec-b36/blob/main/Devops/Kubernetes/cluster.md
 ````
 **Note:** check your region while creating eks cluster
 
