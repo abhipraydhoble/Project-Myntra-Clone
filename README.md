@@ -1,6 +1,9 @@
 
 # MYntra Clone
 
+<img width="1157" height="572" alt="image" src="https://github.com/user-attachments/assets/34b3cffa-e2cd-44ab-9fe2-2124da2aa420" />
+
+
 Prerequisites:
 
    -  NodeJS application code hosted on a Git repository
