@@ -312,12 +312,7 @@ Create a namespace:
 
 ```bash
 kubectl create namespace argocd
-```
-
-Apply official ArgoCD installation:
-
-```bash
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
 Wait 2–3 minutes:
